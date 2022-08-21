@@ -12,9 +12,6 @@
   }
 }
 @media screen and (max-width: 780px) and (min-width: 320px) {
-  * {
-    overflow-x: hidden;
-  }
   h1 {
     font-size: clamp(1.5rem, 0.5192rem + 4.6154vw, 2.25rem);
   }
@@ -40,7 +37,7 @@
     padding: 0px 5%;
   }
   #features .col {
-    min-height: 12rem;
+    margin-bottom: 13rem;
   }
   #thx {
     background-position: center center;
@@ -361,6 +358,10 @@
 }
 .modal-lg .modal-content {
   background-color: transparent;
+  width: clamp(300px, 100%, 770px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .modal-lg .modal-footer {
   border-top: none;
