@@ -1,0 +1,533 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 992px) {
+  #myNav {
+    display: none;
+  }
+  span {
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) and (min-width: 320px) {
+  * {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: clamp(1.5rem, 0.5192rem + 4.6154vw, 2.25rem);
+  }
+  p {
+    font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
+  }
+  #hero {
+    background-image: url(/assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset.jpg);
+    background-size: contain;
+    background-position: center center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #hero .sec {
+    display: none;
+  }
+  #hero .col img {
+    width: 25%;
+    margin: 1%;
+  }
+  #features .parent {
+    flex-direction: column;
+    padding: 0px 5%;
+  }
+  #features .col {
+    min-height: 12rem;
+  }
+  #thx {
+    background-position: center center;
+  }
+  #thx .container {
+    overflow: hidden;
+  }
+  #thx .col-6 {
+    max-width: 100%;
+  }
+  #thx .col-6 .content {
+    overflow: hidden;
+  }
+  #thx .col-6 .content p {
+    color: #f1f1f1;
+    width: 100%;
+    font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
+  }
+  #other {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  #other .row {
+    flex-direction: column;
+    width: 100%;
+  }
+  #other .row .col {
+    min-height: 25rem;
+    margin-left: 5%;
+  }
+  #contact .container {
+    flex-direction: column;
+  }
+  #contact .container .header {
+    width: 100%;
+  }
+  #contact .container .col:nth-child(1) {
+    min-height: 29rem;
+  }
+  #contact .container .col:nth-child(2) {
+    min-height: 22rem;
+  }
+  #contact .container .d-flex {
+    flex-direction: column;
+  }
+  #contact .container .d-flex #name, #contact .container .d-flex #phone {
+    width: 100%;
+  }
+  #footer .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  #footer .container .col-4 {
+    width: 100%;
+    height: 50vh;
+  }
+  #footer .container .col-4 img {
+    width: 100%;
+  }
+  .dropdown-item {
+    text-align: center;
+  }
+  .overlay a {
+    font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
+  }
+  .overlay .closebtn {
+    font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
+    top: 15px;
+    right: 35px;
+  }
+}
+.header {
+  width: 50%;
+  text-align: center;
+  padding-top: 5%;
+  text-transform: uppercase;
+}
+.header h1 {
+  color: #00ff00;
+  font-weight: 900;
+  font-size: clamp(1rem, 0.4272rem + 1.519vw, 2.25rem);
+}
+
+.btn {
+  background-color: #00ff01;
+  text-transform: uppercase;
+  width: 150px;
+  border: 1px solid #00ff01;
+  border-radius: 50px;
+  font-weight: 800;
+}
+.btn:hover {
+  background-color: transparent;
+  color: #00ff01;
+  border: 1px solid #00ff01;
+}
+
+.navbar {
+  background-color: #0f0f0f;
+  height: 80px;
+  font-size: clamp(0.5625rem, 0.4953rem + 0.3165vw, 0.875rem);
+}
+.navbar .dropdown-toggle::after {
+  border: none !important;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f107" !important; /* the desired FontAwesome icon */
+  vertical-align: 0; /* to center vertically */
+}
+.navbar .btn:hover {
+  background-color: transparent;
+  color: #00ff01;
+  border: 1px solid #00ff01;
+}
+.navbar .navbar-toggler {
+  background-color: #0f0f0f;
+}
+.navbar li {
+  margin: 0 10px;
+}
+.navbar li a {
+  color: #978e8e;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.navbar li .dropdown-menu {
+  background-color: #000;
+  border-radius: 0;
+}
+.navbar li .dropdown-menu:hover {
+  background-color: #000;
+}
+.navbar li .dropdown-menu:active {
+  background-color: #000;
+}
+.navbar li :hover {
+  color: #000;
+}
+.navbar .dropright {
+  position: relative;
+  z-index: 1000;
+}
+.navbar .dropright .dropdown-toggle::after {
+  border: none !important;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f054" !important; /* the desired FontAwesome icon */
+  vertical-align: 0; /* to center vertically */
+}
+.navbar .submenu {
+  position: absolute;
+  left: 222px;
+  top: -9px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay .overlay-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay .overlay-content a:active {
+  color: #000;
+}
+.overlay .overlay-content a:hover,
+.overlay .overlay-content a:focus {
+  color: #000;
+  background-color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#hero {
+  background-image: url(/assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  padding-bottom: 5%;
+}
+#hero .container {
+  position: relative;
+  display: flex;
+}
+#hero .container .col {
+  padding-top: 10%;
+}
+#hero .container .col img {
+  width: 15%;
+  margin: 1%;
+}
+#hero .container .col svg {
+  width: 35%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#hero .container h1 {
+  font-weight: 900;
+}
+
+#features {
+  background-color: #0f0f0f;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#features p {
+  color: #978e8e;
+}
+#features .container .parent .col {
+  padding: 3%;
+}
+#features .container .parent .col svg {
+  width: 10%;
+  margin-bottom: 10px;
+}
+#features .container .parent .col h6 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+#slider {
+  background-color: #0f0f0f;
+  overflow: hidden;
+}
+#slider .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#slider .container .photos {
+  width: 100%;
+}
+#slider .container .swiper {
+  width: 100%;
+  padding: 50px 0;
+}
+#slider .container .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider .container .swiper .slider-child {
+  position: relative;
+  overflow-y: hidden;
+}
+#slider .container .swiper .slider-child:hover img {
+  opacity: 0.3;
+}
+#slider .container .swiper .slider-child:hover button {
+  opacity: 1;
+}
+#slider .container .swiper .slider-child img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+#slider .container .swiper .slider-child button {
+  font-size: clamp(0.5rem, 0.4423rem + 0.2564vw, 0.75rem);
+  position: absolute;
+  left: 22%;
+  top: 45%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+#slider .container .swiper .swiper-pagination-bullet {
+  color: #00ff01;
+  position: relative;
+}
+#slider .container .swiper .swiper-pagination-bullet-active {
+  color: #00ff01;
+  background-color: #00ff01;
+}
+#slider .container .swiper .swiper-pagination-bullet-active::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #00ff01;
+  background-color: hsl(0deg, 0%, 6%);
+  height: 12px;
+  width: 12px;
+  left: -2px;
+  top: -2px;
+  z-index: -1;
+}
+
+.modal-lg img {
+  width: 770px;
+  border-radius: 5px;
+}
+.modal-lg .modal-content {
+  background-color: transparent;
+}
+.modal-lg .modal-footer {
+  border-top: none;
+}
+
+#thx {
+  background-image: url(/assets/Desktop/JPG/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
+  background-size: cover;
+}
+#thx .col-6 {
+  padding: 5% 0;
+}
+#thx .col-6 .header {
+  width: 100%;
+  margin: 5% 0;
+  text-align: left;
+}
+#thx .col-6 p {
+  color: #978e8e;
+  font-size: 20px;
+  width: 79%;
+}
+#thx .col-6 img {
+  width: 20%;
+  margin: 1%;
+}
+
+#other {
+  background-color: #0f0f0f;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-bottom: 5%;
+}
+#other .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% auto;
+}
+#other .col {
+  margin-top: 2%;
+}
+#other .col .card {
+  border-radius: 0;
+  border: 0;
+}
+#other .col .card .images {
+  position: relative;
+  background-color: #000;
+}
+#other .col .card .images .gadgets {
+  height: 250px;
+}
+#other .col .card .images .logo {
+  position: absolute;
+  right: 8%;
+  bottom: 7%;
+}
+#other .col .card .content {
+  background-color: #161515;
+  padding: 5%;
+  border-bottom: 3px solid #00ff01;
+}
+#other .col .card .content h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+#other .col .card .content p {
+  color: #978e8e;
+}
+#other .col .card .content a {
+  color: #00ff01;
+  font-weight: 700;
+}
+
+#contact {
+  background-color: #080808;
+  white-space: nowrap;
+}
+#contact #error_message {
+  color: red;
+}
+#contact .col {
+  padding: 5% 10%;
+}
+#contact .col form input, #contact .col form textarea {
+  padding: 5%;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #978e8e;
+}
+#contact .col form * {
+  background-color: transparent;
+  border-radius: 5px;
+  margin: 3px 0;
+}
+#contact .col form #name, #contact .col form #phone, #contact .col form #email, #contact .col form #subject {
+  height: clamp(20px, 100%, 50px);
+}
+#contact .col form #email, #contact .col form #subject, #contact .col form #message {
+  width: clamp(208px, 100%, 425px);
+}
+#contact .col form #name {
+  margin-right: 10px;
+}
+#contact .col form #name, #contact .col form #phone {
+  width: 208px;
+  padding: 5%;
+}
+#contact .col form #message {
+  height: 100px;
+}
+#contact .col form .btn {
+  color: #000;
+  background-color: #00ff00;
+  border-radius: 50px;
+  width: 50%;
+  height: 50%;
+  margin-top: 5%;
+}
+#contact .col form .btn input {
+  border: none;
+  text-transform: uppercase;
+  height: 20px;
+  padding: 0;
+}
+#contact .col .info h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 8%;
+}
+#contact .col .info p {
+  color: #978e8e;
+}
+
+#footer {
+  background-color: #0f0f0f;
+}
+#footer p {
+  text-transform: uppercase;
+  text-align: center;
+  color: #4a4646;
+  font-size: 10px;
+  margin-bottom: 0;
+  padding: 1%;
+}
+#footer .container:nth-child(1) {
+  border-bottom: 1px solid #818181;
+  display: flex;
+  padding: 2%;
+}
+#footer .container:nth-child(1) a {
+  text-transform: uppercase;
+  margin: 2%;
+  color: #978e8e;
+  font-weight: 700;
+  font-size: 10px;
+}
+#footer .container:nth-child(1) .col-4:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#footer .container:nth-child(1) .col-4:nth-child(3) img {
+  width: 20px;
+  margin: 2%;
+}/*# sourceMappingURL=style.css.map */
