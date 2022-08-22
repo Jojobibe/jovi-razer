@@ -632,6 +632,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        color: white;
 
         input,
         textarea {
@@ -645,7 +646,6 @@ body {
           background-color: transparent;
           border-radius: 5px;
           width: 100%;
-          color: white;
         }
 
         .d-flex {
