@@ -6,18 +6,6 @@ body {
 
 // RESPONSIVENESS
 
-@media screen and (width: 1024px) {
-  #other {
-    .col {
-      width: 250px;
-      .gadgets {
-        width: 90%;
-        height: auto;
-      }
-    }
-  }
-}
-
 @media screen and (min-width: 992px) {
   .header {
     p {
@@ -479,7 +467,7 @@ body {
 
 .modal-lg {
   img {
-    width: 770px;
+    width: 100%;
     border-radius: 5px;
   }
 
@@ -537,6 +525,7 @@ body {
       transition: all 0.5s ease;
 
       button {
+        margin-top: 4em;
         display: none;
         font-size: 12px;
         width: 60%;

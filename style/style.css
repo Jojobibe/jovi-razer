@@ -4,15 +4,6 @@ body {
   background-color: #0f0f0f;
 }
 
-@media screen and (width: 1024px) {
-  #other .col {
-    width: 250px;
-  }
-  #other .col .gadgets {
-    width: 90%;
-    height: auto;
-  }
-}
 @media screen and (min-width: 992px) {
   .header p {
     width: 60%;
@@ -384,7 +375,7 @@ body {
 }
 
 .modal-lg img {
-  width: 770px;
+  width: 100%;
   border-radius: 5px;
 }
 .modal-lg .modal-content {
@@ -435,6 +426,7 @@ body {
   transition: all 0.5s ease;
 }
 #other .container .main-wrap button {
+  margin-top: 4em;
   display: none;
   font-size: 12px;
   width: 60%;
