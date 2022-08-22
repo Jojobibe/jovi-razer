@@ -1,9 +1,13 @@
-* {
+body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  background-color: #0f0f0f;
 }
 
 @media screen and (min-width: 992px) {
+  .header p {
+    width: 60%;
+  }
   #myNav {
     display: none;
   }
@@ -16,6 +20,15 @@
     font-size: clamp(1.5rem, 0.5192rem + 4.6154vw, 2.25rem);
   }
   p {
+    font-size: clamp(0.75rem, 0.5568rem + 0.9091vw, 1rem);
+  }
+  .header {
+    padding: 8%;
+  }
+  .header p {
+    width: 100%;
+  }
+  .btn {
     font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
   }
   #hero {
@@ -23,7 +36,6 @@
     background-size: contain;
     background-position: center center;
     flex-direction: column;
-    overflow: hidden;
   }
   #hero .sec {
     display: none;
@@ -32,24 +44,22 @@
     width: 25%;
     margin: 1%;
   }
+  #features {
+    margin: 50px 0;
+  }
   #features .parent {
+    margin: 0px 10px;
     flex-direction: column;
     padding: 0px 5%;
   }
   #features .col {
-    margin-bottom: 13rem;
+    margin-bottom: 8rem;
   }
   #thx {
     background-position: center center;
   }
-  #thx .container {
-    overflow: hidden;
-  }
   #thx .col-6 {
     max-width: 100%;
-  }
-  #thx .col-6 .content {
-    overflow: hidden;
   }
   #thx .col-6 .content p {
     color: #f1f1f1;
@@ -58,16 +68,26 @@
   }
   #other {
     justify-content: center;
-    display: flex;
     align-items: center;
   }
-  #other .row {
+  #other .main-wrap {
     flex-direction: column;
     width: 100%;
   }
-  #other .row .col {
-    min-height: 25rem;
-    margin-left: 5%;
+  #other .main-wrap .show {
+    display: none;
+  }
+  #other .main-wrap .show-more {
+    display: block;
+  }
+  #other .main-wrap #show {
+    display: block;
+  }
+  #other .main-wrap .d-flex {
+    flex-direction: column;
+  }
+  #other .main-wrap .d-flex .col {
+    min-height: 27rem;
   }
   #contact .container {
     flex-direction: column;
@@ -84,7 +104,8 @@
   #contact .container .d-flex {
     flex-direction: column;
   }
-  #contact .container .d-flex #name, #contact .container .d-flex #phone {
+  #contact .container .d-flex #name,
+#contact .container .d-flex #phone {
     width: 100%;
   }
   #footer .container {
@@ -111,15 +132,22 @@
   }
 }
 .header {
-  width: 50%;
+  width: 100%;
   text-align: center;
   padding-top: 5%;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .header h1 {
   color: #00ff00;
+  text-transform: uppercase;
   font-weight: 900;
   font-size: clamp(1rem, 0.4272rem + 1.519vw, 2.25rem);
+}
+.header p {
+  font-size: clamp(0.75rem, 0.5568rem + 0.9091vw, 1rem);
 }
 
 .btn {
@@ -264,7 +292,6 @@
 }
 
 #features {
-  background-color: #0f0f0f;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -286,10 +313,6 @@
   font-weight: 900;
 }
 
-#slider {
-  background-color: #0f0f0f;
-  overflow: hidden;
-}
 #slider .container {
   display: flex;
   justify-content: center;
@@ -310,7 +333,6 @@
 }
 #slider .container .swiper .slider-child {
   position: relative;
-  overflow-y: hidden;
 }
 #slider .container .swiper .slider-child:hover img {
   opacity: 0.3;
@@ -389,52 +411,59 @@
   margin: 1%;
 }
 
-#other {
-  background-color: #0f0f0f;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding-bottom: 5%;
-}
 #other .header {
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2% auto;
 }
-#other .col {
+#other .container {
+  transition: all 0.5s ease;
+}
+#other .container .main-wrap {
+  display: flex;
+  margin: 5% 0;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+#other .container .main-wrap button {
+  display: none;
+  font-size: 12px;
+  width: 60%;
+}
+#other .container .main-wrap .col {
   margin-top: 2%;
 }
-#other .col .card {
+#other .container .main-wrap .col .card {
   border-radius: 0;
   border: 0;
+  width: 100%;
 }
-#other .col .card .images {
+#other .container .main-wrap .col .card .images {
   position: relative;
   background-color: #000;
 }
-#other .col .card .images .gadgets {
+#other .container .main-wrap .col .card .images .gadgets {
   height: 250px;
 }
-#other .col .card .images .logo {
+#other .container .main-wrap .col .card .images .logo {
   position: absolute;
   right: 8%;
   bottom: 7%;
 }
-#other .col .card .content {
+#other .container .main-wrap .col .card .content {
   background-color: #161515;
   padding: 5%;
   border-bottom: 3px solid #00ff01;
 }
-#other .col .card .content h6 {
+#other .container .main-wrap .col .card .content h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: white;
 }
-#other .col .card .content p {
+#other .container .main-wrap .col .card .content p {
   color: #978e8e;
 }
-#other .col .card .content a {
+#other .container .main-wrap .col .card .content a {
   color: #00ff01;
   font-weight: 700;
 }
@@ -442,61 +471,77 @@
 #contact {
   background-color: #080808;
   white-space: nowrap;
+  padding: 5% 10%;
 }
 #contact #error_message {
   color: red;
 }
-#contact .col {
-  padding: 5% 10%;
+#contact .container {
+  display: flex;
 }
-#contact .col form input, #contact .col form textarea {
-  padding: 5%;
+#contact .container .col .header {
+  margin-bottom: 4%;
+  align-items: flex-start;
+}
+#contact .container .col form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact .container .col form input,
+#contact .container .col form textarea {
+  padding: 2%;
   font-size: 14px;
   font-weight: 700;
   border: 1px solid #978e8e;
 }
-#contact .col form * {
+#contact .container .col form * {
   background-color: transparent;
   border-radius: 5px;
-  margin: 3px 0;
+  width: 100%;
 }
-#contact .col form #name, #contact .col form #phone, #contact .col form #email, #contact .col form #subject {
-  height: clamp(20px, 100%, 50px);
+#contact .container .col form .d-flex {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
-#contact .col form #email, #contact .col form #subject, #contact .col form #message {
-  width: clamp(208px, 100%, 425px);
+#contact .container .col form .d-flex input {
+  padding: 4%;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #978e8e;
 }
-#contact .col form #name {
-  margin-right: 10px;
-}
-#contact .col form #name, #contact .col form #phone {
-  width: 208px;
-  padding: 5%;
-}
-#contact .col form #message {
+#contact .container .col form #message {
   height: 100px;
 }
-#contact .col form .btn {
+#contact .container .col form .btn {
   color: #000;
   background-color: #00ff00;
   border-radius: 50px;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 40px;
   margin-top: 5%;
 }
-#contact .col form .btn input {
+#contact .container .col form .btn input {
   border: none;
   text-transform: uppercase;
   height: 20px;
   padding: 0;
 }
-#contact .col .info h6 {
+#contact .container .col .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact .container .col .wrapper .info div {
+  margin-bottom: 10%;
+}
+#contact .container .col .wrapper .info div h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: white;
-  margin-top: 8%;
 }
-#contact .col .info p {
+#contact .container .col .wrapper .info div p {
   color: #978e8e;
 }
 
@@ -516,6 +561,15 @@
   display: flex;
   padding: 2%;
 }
+#footer .container:nth-child(1) .col-4 {
+  margin: 10px 0;
+}
+#footer .container:nth-child(1) .col-4:nth-child(1) {
+  width: 100%;
+}
+#footer .container:nth-child(1) .col-4:nth-child(1) img {
+  width: 130px;
+}
 #footer .container:nth-child(1) a {
   text-transform: uppercase;
   margin: 2%;
@@ -527,8 +581,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 #footer .container:nth-child(1) .col-4:nth-child(3) img {
-  width: 20px;
-  margin: 2%;
+  width: clamp(10px, 100%, 20px);
 }/*# sourceMappingURL=style.css.map */

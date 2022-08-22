@@ -1,62 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://kit.fontawesome.com/f81e7a17be.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f81e7a17be.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css" />
     <title>Razer</title>
-</head>
-<body>
-  
-    
-
-
+  </head>
+  <body>
     <!-- NAVBAR -->
     <section>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-              <a class="navbar-brand" href="#"><img src="/assets/Desktop/PNG/Razer Logo.png" alt=""></a>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="/assets/Desktop/PNG/Razer Logo.png" alt=""
+          /></a>
 
-              <!-- responsive nav -->
+          <!-- responsive nav -->
           <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
             <div class="overlay-content">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      products
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    products
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">laptops </a></li>
+                    <li><a class="dropdown-item" href="#">mobiles</a></li>
+                    <li><a class="dropdown-item" href="#">mouses & mats</a></li>
+                    <li><a class="dropdown-item" href="#">keyboards</a></li>
+                    <li class="dropdown dropend">
+                      <a
+                        class="dropdown-item dropdown-toggle"
+                        href="#"
+                        id="multilevelDropdownMenu1"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >headset & audio</a
+                      >
+
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="multilevelDropdownMenu1"
+                      >
+                        <li><a class="dropdown-item" href="#">wireless</a></li>
+                        <li><a class="dropdown-item" href="#">wired</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">console</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">contact us</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn rounded-pill" type="submit">
+                    buy now
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+            >&#9776;</span
+          >
+
+          <!-- MAIN NAV -->
+          <!-- DROPDOWN -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDarkDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  products
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">laptops </a></li>
+                  <li><a class="dropdown-item" href="#">mobiles</a></li>
+                  <li><a class="dropdown-item" href="#">mouses & mats</a></li>
+                  <li><a class="dropdown-item" href="#">keyboards</a></li>
+                  <li class="dropright">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="multilevelDropendMenu1"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >headset & audio
                     </a>
 
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">laptops </a></li>
-                      <li><a class="dropdown-item" href="#">mobiles</a></li>
-                      <li><a class="dropdown-item" href="#">mouses & mats</a></li>
-                      <li><a class="dropdown-item" href="#">keyboards</a></li>
-                      <li class="dropdown dropend">
-                        <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">headset & audio</a>
-
-                        <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
-                            <li><a class="dropdown-item" href="#">wireless</a></li>
-                            <li><a class="dropdown-item" href="#">wired</a></li>
-                        </ul>
-                            
-                        </li>
-                      <li><a class="dropdown-item" href="#">console</a></li>
+                    <ul
+                      class="dropdown-menu submenu"
+                      aria-labelledby="multilevelDropendMenu1"
+                    >
+                      <li><a class="dropdown-item" href="#">wireless</a></li>
+                      <li><a class="dropdown-item" href="#">wired</a></li>
                     </ul>
-                </li>
+                  </li>
+                  <li><a class="dropdown-item" href="#">console</a></li>
+                </ul>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">about</a>
               </li>
@@ -67,217 +163,535 @@
                 <a class="nav-link" href="#">contact us</a>
               </li>
               <li class="nav-item">
-                <button class="btn rounded-pill" type="submit">buy now</button>
+                <button class="btn" type="submit">buy now</button>
               </li>
             </ul>
-            </div>
           </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-            <!-- MAIN NAV -->
-              <!-- DROPDOWN -->
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          products
-                          
-                        </a>
-
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">laptops </a></li>
-                          <li><a class="dropdown-item" href="#">mobiles</a></li>
-                          <li><a class="dropdown-item" href="#">mouses & mats</a></li>
-                          <li><a class="dropdown-item" href="#">keyboards</a></li>
-                          <li class="dropright">
-                            <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropendMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">headset & audio </a>
-
-                            <ul class="dropdown-menu submenu" aria-labelledby="multilevelDropendMenu1">
-                                <li><a class="dropdown-item" href="#">wireless</a></li>
-                                <li><a class="dropdown-item" href="#">wired</a></li>
-                            </ul>
-                                
-                            </li>
-                          <li><a class="dropdown-item" href="#">console</a></li>
-                        </ul>
-                    </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">about</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">community</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">contact us</a>
-                  </li>
-                  <li class="nav-item">
-                    <button class="btn" type="submit">buy now</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-          
+        </div>
+      </nav>
     </section>
 
     <!-- HERO -->
 
     <section id="hero" class="hero">
-        <div class="container">
-            <div class="col">
-                <h1>SUPREME WIRELESS IMMERSION</h1>
-                <p>When it comes to gaming immersion, sound plays a critical role. It engages your sense of hearing to determine the atmosphere and mood, creating a lifelike experience that lets you truly embody your game character. Standing by this philosophy, we’ve built a headset with THX Spatial Audio to bring you 360° positional sound, giving you greater spatial awareness. We’ve also added ergonomic design features to make this one of the most comfortable daily drivers for gaming. This is the Razer Nari.</p>
-                <div class="logo d-flex">
-                    <img class="logo" src="/assets/Desktop/PNG/razer-nari-thx-logo.png" alt="">
-                    <img class="logo" src="/assets/Desktop/PNG/razer-nari-chroma-logo.png" alt="">
-                </div>
-            </div>
-            <div class="col sec">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.17 47"><defs><style>.cls-1{fill:#44d62c;}.cls-2{fill:#fff;}</style></defs><title>razer-nari-logo</title><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="33.22 14.65 29.95 14.65 32.81 9.69 33.22 8.99 32.41 8.99 28.74 8.99 28.74 9.69 32.01 9.69 29.14 14.65 28.74 15.35 29.55 15.35 32.81 15.35 33.22 14.65"/><polygon class="cls-1" points="42.09 8.99 37.64 8.99 37.64 9.69 41.69 9.69 42.09 8.99"/><polygon class="cls-1" points="42.09 11.82 37.64 11.82 37.64 12.52 41.69 12.52 42.09 11.82"/><polygon class="cls-1" points="42.09 14.65 37.64 14.65 37.64 15.35 41.69 15.35 42.09 14.65"/><path class="cls-1" d="M51,11v-.4A1.57,1.57,0,0,0,49.43,9H46.54v6.36h.7V12.52h1.31l1.64,2.83H51l-1.63-2.83h.07A1.56,1.56,0,0,0,51,11ZM47.24,9.69h2.19a.86.86,0,0,1,.86.87V11a.85.85,0,0,1-.86.86H47.24Z"/><path class="cls-1" d="M15.38,11v-.4A1.57,1.57,0,0,0,13.82,9H10.93v6.36h.7V12.52h1.31l1.64,2.83h.8l-1.63-2.83h.07A1.56,1.56,0,0,0,15.38,11ZM11.63,9.69h2.19a.87.87,0,0,1,.87.87V11a.86.86,0,0,1-.87.86H11.63Z"/><polygon class="cls-1" points="20.24 15.35 22.05 10.86 23.86 15.35 24.62 15.35 22.43 9.93 22.05 8.99 21.67 9.93 19.48 15.35 20.24 15.35"/><polygon class="cls-1" points="51.41 9.26 51.41 9.13 52.36 9.13 52.36 9.26 51.96 9.26 51.96 10.44 51.81 10.44 51.81 9.26 51.41 9.26"/><polygon class="cls-1" points="52.73 10.44 52.73 9.13 52.99 9.13 53.36 10.24 53.73 9.13 53.99 9.13 53.99 10.44 53.85 10.44 53.85 9.29 53.82 9.29 53.44 10.39 53.28 10.39 52.9 9.29 52.87 9.29 52.87 10.44 52.73 10.44"/><path class="cls-2" d="M11.08,20.13h3.09L21.52,36.3h.58V20.13h1.54V37.69h-3l-7.4-16.15h-.56V37.69H11.08Z"/><path class="cls-2" d="M33.53,20.13h3.66l5,17.56H40.68l-1.42-4.85H31.43L30,37.69H28.47ZM31.81,31.45h7.07L36,21.49H34.66Z"/><path class="cls-2" d="M48.6,30.76v6.93H47V20.13h6.44c3.61,0,5.46,1.56,5.46,5.2,0,2.65-1,4.5-3.39,5.13l3.62,7.23H57.42L54,30.76Zm4.88-9.24H48.6v7.85h4.88c2.86,0,3.84-1.66,3.84-4C57.32,22.73,56.11,21.52,53.48,21.52Z"/><path class="cls-2" d="M64.31,20.13h1.56V37.69H64.31Z"/></g></svg>
-            </div>
+      <div class="container">
+        <div class="col">
+          <h1>SUPREME WIRELESS IMMERSION</h1>
+          <p>
+            When it comes to gaming immersion, sound plays a critical role. It
+            engages your sense of hearing to determine the atmosphere and mood,
+            creating a lifelike experience that lets you truly embody your game
+            character. Standing by this philosophy, we’ve built a headset with
+            THX Spatial Audio to bring you 360° positional sound, giving you
+            greater spatial awareness. We’ve also added ergonomic design
+            features to make this one of the most comfortable daily drivers for
+            gaming. This is the Razer Nari.
+          </p>
+          <div class="logo d-flex">
+            <img
+              class="logo"
+              src="/assets/Desktop/PNG/razer-nari-thx-logo.png"
+              alt=""
+            />
+            <img
+              class="logo"
+              src="/assets/Desktop/PNG/razer-nari-chroma-logo.png"
+              alt=""
+            />
+          </div>
         </div>
+        <div class="col sec">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.17 47">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #44d62c;
+                }
+                .cls-2 {
+                  fill: #fff;
+                }
+              </style>
+            </defs>
+            <title>razer-nari-logo</title>
+            <g id="Layer_1" data-name="Layer 1">
+              <polygon
+                class="cls-1"
+                points="33.22 14.65 29.95 14.65 32.81 9.69 33.22 8.99 32.41 8.99 28.74 8.99 28.74 9.69 32.01 9.69 29.14 14.65 28.74 15.35 29.55 15.35 32.81 15.35 33.22 14.65"
+              />
+              <polygon
+                class="cls-1"
+                points="42.09 8.99 37.64 8.99 37.64 9.69 41.69 9.69 42.09 8.99"
+              />
+              <polygon
+                class="cls-1"
+                points="42.09 11.82 37.64 11.82 37.64 12.52 41.69 12.52 42.09 11.82"
+              />
+              <polygon
+                class="cls-1"
+                points="42.09 14.65 37.64 14.65 37.64 15.35 41.69 15.35 42.09 14.65"
+              />
+              <path
+                class="cls-1"
+                d="M51,11v-.4A1.57,1.57,0,0,0,49.43,9H46.54v6.36h.7V12.52h1.31l1.64,2.83H51l-1.63-2.83h.07A1.56,1.56,0,0,0,51,11ZM47.24,9.69h2.19a.86.86,0,0,1,.86.87V11a.85.85,0,0,1-.86.86H47.24Z"
+              />
+              <path
+                class="cls-1"
+                d="M15.38,11v-.4A1.57,1.57,0,0,0,13.82,9H10.93v6.36h.7V12.52h1.31l1.64,2.83h.8l-1.63-2.83h.07A1.56,1.56,0,0,0,15.38,11ZM11.63,9.69h2.19a.87.87,0,0,1,.87.87V11a.86.86,0,0,1-.87.86H11.63Z"
+              />
+              <polygon
+                class="cls-1"
+                points="20.24 15.35 22.05 10.86 23.86 15.35 24.62 15.35 22.43 9.93 22.05 8.99 21.67 9.93 19.48 15.35 20.24 15.35"
+              />
+              <polygon
+                class="cls-1"
+                points="51.41 9.26 51.41 9.13 52.36 9.13 52.36 9.26 51.96 9.26 51.96 10.44 51.81 10.44 51.81 9.26 51.41 9.26"
+              />
+              <polygon
+                class="cls-1"
+                points="52.73 10.44 52.73 9.13 52.99 9.13 53.36 10.24 53.73 9.13 53.99 9.13 53.99 10.44 53.85 10.44 53.85 9.29 53.82 9.29 53.44 10.39 53.28 10.39 52.9 9.29 52.87 9.29 52.87 10.44 52.73 10.44"
+              />
+              <path
+                class="cls-2"
+                d="M11.08,20.13h3.09L21.52,36.3h.58V20.13h1.54V37.69h-3l-7.4-16.15h-.56V37.69H11.08Z"
+              />
+              <path
+                class="cls-2"
+                d="M33.53,20.13h3.66l5,17.56H40.68l-1.42-4.85H31.43L30,37.69H28.47ZM31.81,31.45h7.07L36,21.49H34.66Z"
+              />
+              <path
+                class="cls-2"
+                d="M48.6,30.76v6.93H47V20.13h6.44c3.61,0,5.46,1.56,5.46,5.2,0,2.65-1,4.5-3.39,5.13l3.62,7.23H57.42L54,30.76Zm4.88-9.24H48.6v7.85h4.88c2.86,0,3.84-1.66,3.84-4C57.32,22.73,56.11,21.52,53.48,21.52Z"
+              />
+              <path class="cls-2" d="M64.31,20.13h1.56V37.69H64.31Z" />
+            </g>
+          </svg>
+        </div>
+      </div>
     </section>
-
     <section id="features">
-
+      <div class="container">
         <div class="header">
-            <h1>COMPLEMENTED BY COMFORT</h1>
-            <p>The Razer Nari is designed so that its immersive technology is complemented by 
-            comfortable features, letting you escape into game worlds for hours without strain.</p>
+          <h1>COMPLEMENTED BY COMFORT</h1>
+          <p>
+            The Razer Nari is designed so that its immersive technology is
+            complemented by comfortable features, letting you escape into game
+            worlds for hours without strain.
+          </p>
         </div>
-        
-
-        <div class="container">
-
-            <div class="row parent">
-                <div class="col">
-                    <div class="child">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#44d62c;}</style></defs><title>razer-nari-Cooling-Gel-Infused-Cushions-icon</title><path class="cls-1" d="M13.58,26.71A13.13,13.13,0,1,1,26.71,13.59,13.14,13.14,0,0,1,13.58,26.71Zm0-25.26A12.14,12.14,0,1,0,25.72,13.59,12.15,12.15,0,0,0,13.58,1.45Z"/><path class="cls-1" d="M21.58,9a.5.5,0,0,0-.69-.19l-1.75,1v-2a.5.5,0,0,0-.51-.51.51.51,0,0,0-.51.51v2.58l-4,2.3V8.13l2.23-1.3a.5.5,0,1,0-.5-.87L14.16,7V5a.51.51,0,0,0-.51-.51.51.51,0,0,0-.51.51V7L11.41,6a.5.5,0,0,0-.69.18.51.51,0,0,0,.18.69l2.24,1.3v4.6l-4-2.3V7.85a.51.51,0,1,0-1,0v2l-1.73-1A.5.5,0,0,0,5.74,9a.51.51,0,0,0,.18.69l1.73,1-1.73,1a.51.51,0,0,0-.18.69.51.51,0,0,0,.45.27.48.48,0,0,0,.24-.06l2.24-1.3,4,2.29-4,2.3L6.43,14.6a.5.5,0,1,0-.51.87l1.73,1-1.73,1a.5.5,0,0,0-.18.69.52.52,0,0,0,.45.26.48.48,0,0,0,.24-.06l1.73-1v2a.51.51,0,1,0,1,0V16.78l4-2.3v4.59l-2.24,1.3a.52.52,0,0,0-.18.7.52.52,0,0,0,.45.26.48.48,0,0,0,.24-.06l1.73-1v2a.5.5,0,0,0,.51.5.5.5,0,0,0,.51-.5v-2l1.73,1a.53.53,0,0,0,.24.06.5.5,0,0,0,.45-.26.51.51,0,0,0-.19-.7l-2.23-1.3V14.48l4,2.3v2.58a.51.51,0,0,0,.51.51.51.51,0,0,0,.51-.51v-2l1.73,1a.53.53,0,0,0,.24.06.5.5,0,0,0,.45-.26.5.5,0,0,0-.18-.69l-1.73-1,1.73-1a.5.5,0,0,0-.51-.87l-2.24,1.3-4-2.3,4-2.29,2.24,1.3a.53.53,0,0,0,.24.06.49.49,0,0,0,.45-.27.51.51,0,0,0-.18-.69l-1.73-1,1.73-1A.49.49,0,0,0,21.58,9Z"/></svg>
-                        <h6>Cooling Gel-Infused Cushions</h6>
-                        <p>Reduces heat build-up during intense gaming sessions</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="child">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#44d62c;}</style></defs><title>razer-nari-Auto-Adjusting-Headband-icon</title><path class="cls-1" d="M4.82,24.36A14,14,0,0,1,.34,14.06,13.44,13.44,0,0,1,13.5.37,13.44,13.44,0,0,1,26.66,14.06,14,14,0,0,1,22.24,24.3l-.66-.78a12.89,12.89,0,0,0,4.09-9.46A12.43,12.43,0,0,0,13.5,1.41,12.43,12.43,0,0,0,1.33,14.06a12.89,12.89,0,0,0,4.15,9.52Z"/><path class="cls-1" d="M8.41,26.69a.41.41,0,0,1-.21-.05A13.45,13.45,0,0,1,.74,16.36.53.53,0,0,1,1,15.85,6.1,6.1,0,0,1,2.8,15a6.2,6.2,0,0,1,1.63-.22c3.55,0,6.48,5.72,6.48,6.74A6.89,6.89,0,0,1,10,24.9a7,7,0,0,1-1.3,1.66A.46.46,0,0,1,8.41,26.69ZM1.77,16.55a12.52,12.52,0,0,0,6.54,9,5.62,5.62,0,0,0,.87-1.18,5.87,5.87,0,0,0,.74-2.84c-.08-.7-2.59-5.71-5.49-5.71A5.15,5.15,0,0,0,3.05,16,5.49,5.49,0,0,0,1.77,16.55Z"/><path class="cls-1" d="M18.75,26.69a.46.46,0,0,1-.33-.13,6.77,6.77,0,0,1-1.3-1.66,6.89,6.89,0,0,1-.87-3.36c0-1,2.93-6.74,6.48-6.74a6.13,6.13,0,0,1,1.62.22,6,6,0,0,1,1.85.83.53.53,0,0,1,.22.51A13.49,13.49,0,0,1,19,26.64.41.41,0,0,1,18.75,26.69Zm4-10.86c-2.9,0-5.41,5-5.49,5.72A5.86,5.86,0,0,0,18,24.38a6,6,0,0,0,.86,1.18,12.47,12.47,0,0,0,6.54-9A5.42,5.42,0,0,0,24.11,16,5.21,5.21,0,0,0,22.73,15.83Z"/><path class="cls-1" d="M6.36,6.59l-.71-.72a10.67,10.67,0,0,1,15.59-.09l-.7.73a9.7,9.7,0,0,0-14.18.08Z"/><path class="cls-1" d="M9.55,23.74C5.87,17.2,2.8,16,2.77,16l.32-1c.14.05,3.42,1.27,7.32,8.2Z"/><path class="cls-1" d="M17.65,23.74l-.85-.52c3.89-6.93,7.18-8.15,7.32-8.2l.32,1-.16-.49.16.49S21.33,17.2,17.65,23.74Z"/></svg>
-                        <h6>Auto-Adjusting Headband</h6>
-                        <p>Maximum adjustability to fit seamlessly onto any head size</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="child">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#44d62c;}</style></defs><title>razer-nari-Swiveling-Earcups-icon</title><path class="cls-1" d="M13.5.46A13.13,13.13,0,1,0,26.63,13.59,13.14,13.14,0,0,0,13.5.46Zm0,25.26A12.14,12.14,0,1,1,25.64,13.59,12.15,12.15,0,0,1,13.5,25.72Z"/><path class="cls-1" d="M14.06,4.68a8.62,8.62,0,0,0-8.61,8.61,9.33,9.33,0,0,0,.11,1.4h0a.45.45,0,0,0,.12.27c.16.17,1.16,1.2,2.08,2a1.28,1.28,0,0,0-.09.48,1.51,1.51,0,1,0,.69-1.27c-.67-.6-1.42-1.35-1.84-1.79a8,8,0,0,1-.09-1.1,7.63,7.63,0,0,1,15.25,0c0,.23,0,.45,0,.67a4,4,0,0,0-.69-.25,4.51,4.51,0,0,0-1.08-.14c-2.43,0-4.33,3.66-4.33,4.33A4.34,4.34,0,0,0,17,21.13a.5.5,0,0,0,.33.12.45.45,0,0,0,.2,0,8.49,8.49,0,0,0,2.19-1.47l0,0A8.61,8.61,0,0,0,14.06,4.68Zm3.36,15.48a3.56,3.56,0,0,1-.43-.59,3.27,3.27,0,0,1-.45-1.64c.07-.45,1.63-3.37,3.34-3.37a3.59,3.59,0,0,1,.84.11,3.09,3.09,0,0,1,.66.25A7.54,7.54,0,0,1,17.42,20.16Z"/><path class="cls-1" d="M10,13.59a4,4,0,0,0-2,.12.51.51,0,0,0-.32.63.5.5,0,0,0,.63.31,2.94,2.94,0,0,1,3.37,1.17A2.88,2.88,0,0,1,12.06,18a2.93,2.93,0,0,1-1.25,1.87,2.94,2.94,0,0,1-4.51-3,.49.49,0,0,0-.39-.58.48.48,0,0,0-.58.39A3.94,3.94,0,0,0,8.4,21.3a4.13,4.13,0,0,0,.78.08A3.93,3.93,0,0,0,10,13.59Z"/></svg>
-                        <h6>Swiveling Earcups</h6>
-                        <p>Adapting to the shape and position of your ears</p>
-                    </div>
-                </div>
+        <div class="row parent">
+          <div class="col">
+            <div class="child">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 27 27"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #44d62c;
+                    }
+                  </style>
+                </defs>
+                <title>razer-nari-Cooling-Gel-Infused-Cushions-icon</title>
+                <path
+                  class="cls-1"
+                  d="M13.58,26.71A13.13,13.13,0,1,1,26.71,13.59,13.14,13.14,0,0,1,13.58,26.71Zm0-25.26A12.14,12.14,0,1,0,25.72,13.59,12.15,12.15,0,0,0,13.58,1.45Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M21.58,9a.5.5,0,0,0-.69-.19l-1.75,1v-2a.5.5,0,0,0-.51-.51.51.51,0,0,0-.51.51v2.58l-4,2.3V8.13l2.23-1.3a.5.5,0,1,0-.5-.87L14.16,7V5a.51.51,0,0,0-.51-.51.51.51,0,0,0-.51.51V7L11.41,6a.5.5,0,0,0-.69.18.51.51,0,0,0,.18.69l2.24,1.3v4.6l-4-2.3V7.85a.51.51,0,1,0-1,0v2l-1.73-1A.5.5,0,0,0,5.74,9a.51.51,0,0,0,.18.69l1.73,1-1.73,1a.51.51,0,0,0-.18.69.51.51,0,0,0,.45.27.48.48,0,0,0,.24-.06l2.24-1.3,4,2.29-4,2.3L6.43,14.6a.5.5,0,1,0-.51.87l1.73,1-1.73,1a.5.5,0,0,0-.18.69.52.52,0,0,0,.45.26.48.48,0,0,0,.24-.06l1.73-1v2a.51.51,0,1,0,1,0V16.78l4-2.3v4.59l-2.24,1.3a.52.52,0,0,0-.18.7.52.52,0,0,0,.45.26.48.48,0,0,0,.24-.06l1.73-1v2a.5.5,0,0,0,.51.5.5.5,0,0,0,.51-.5v-2l1.73,1a.53.53,0,0,0,.24.06.5.5,0,0,0,.45-.26.51.51,0,0,0-.19-.7l-2.23-1.3V14.48l4,2.3v2.58a.51.51,0,0,0,.51.51.51.51,0,0,0,.51-.51v-2l1.73,1a.53.53,0,0,0,.24.06.5.5,0,0,0,.45-.26.5.5,0,0,0-.18-.69l-1.73-1,1.73-1a.5.5,0,0,0-.51-.87l-2.24,1.3-4-2.3,4-2.29,2.24,1.3a.53.53,0,0,0,.24.06.49.49,0,0,0,.45-.27.51.51,0,0,0-.18-.69l-1.73-1,1.73-1A.49.49,0,0,0,21.58,9Z"
+                />
+              </svg>
+              <h6>Cooling Gel-Infused Cushions</h6>
+              <p>Reduces heat build-up during intense gaming sessions</p>
             </div>
-
-            <div class="row parent">
-                <div class="col">
-                    <div class="child">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#44d62c;}</style></defs><title>razer-nari-Game-Chat-Balance-icon</title><path class="cls-1" d="M13.5,26.63A13.13,13.13,0,1,1,26.63,13.5,13.14,13.14,0,0,1,13.5,26.63Zm0-25.27A12.14,12.14,0,1,0,25.64,13.5,12.16,12.16,0,0,0,13.5,1.36Z"/><rect class="cls-1" x="18.33" y="2.15" width="0.99" height="22.82"/><rect class="cls-1" x="7.66" y="2.15" width="0.99" height="23.03"/><path class="cls-1" d="M15.09,9.83H11.91a.5.5,0,1,1,0-1h3.18a.5.5,0,1,1,0,1Z"/><path class="cls-1" d="M13.5,11.42a.5.5,0,0,1-.5-.49V7.75a.5.5,0,0,1,1,0v3.18A.5.5,0,0,1,13.5,11.42Z"/><path class="cls-1" d="M15.09,18.25H11.91a.5.5,0,1,1,0-1h3.18a.5.5,0,1,1,0,1Z"/><path class="cls-1" d="M19.07,18.44c.49,0,.89.54.89,1.21s-.4,1.21-.89,1.21"/><rect class="cls-1" x="19.13" y="6.64" width="0.72" height="3.2" rx="0.36" ry="0.36"/></svg>
-                        <h6>Game/Chat Balance</h6>
-                        <p>Fine-tune between game and chat volume for the perfect mix that lets you enjoy immersive sound without interrupting team communication.</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="child">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#44d62c;}</style></defs><title>razer-nari-Wireless-Audio-icon</title><path class="cls-1" d="M4.84,23.58a13.25,13.25,0,1,1,17.54,0l-.66-.75a12.25,12.25,0,1,0-16.22,0Z"/><path class="cls-1" d="M8.45,25.84a.45.45,0,0,1-.2,0,13.12,13.12,0,0,1-7.52-10,.5.5,0,0,1,.23-.5,6.48,6.48,0,0,1,1.85-.8,6.54,6.54,0,0,1,1.64-.22C8,14.33,11,19.88,11,20.86a6.42,6.42,0,0,1-.88,3.25,6.14,6.14,0,0,1-1.3,1.61A.46.46,0,0,1,8.45,25.84ZM1.78,16a12.11,12.11,0,0,0,6.58,8.72,5.38,5.38,0,0,0,.87-1.14A5.56,5.56,0,0,0,10,20.86c-.07-.68-2.6-5.53-5.52-5.53a5.41,5.41,0,0,0-1.39.18A5.53,5.53,0,0,0,1.77,16Z"/><path class="cls-1" d="M18.87,25.84a.52.52,0,0,1-.34-.12,6.56,6.56,0,0,1-2.18-4.87c0-1,2.95-6.52,6.52-6.52a6.41,6.41,0,0,1,1.64.21,6.69,6.69,0,0,1,1.86.81.51.51,0,0,1,.22.5,13.13,13.13,0,0,1-7.51,10A.52.52,0,0,1,18.87,25.84Zm4-10.51c-2.92,0-5.44,4.85-5.52,5.54a5.49,5.49,0,0,0,.74,2.74A5.64,5.64,0,0,0,19,24.75,12.15,12.15,0,0,0,25.55,16,5.69,5.69,0,0,0,22.87,15.33Z"/><path class="cls-1" d="M6.39,6.39l-.71-.7a11,11,0,0,1,15.6-.18l.09.09-.7.71a10,10,0,0,0-14.19,0Z"/><path class="cls-1" d="M9.61,23C5.9,16.66,2.8,15.5,2.77,15.49l.33-.94c.14,0,3.45,1.22,7.37,7.93Z"/><path class="cls-1" d="M17.76,23l-.86-.51c3.92-6.71,7.24-7.89,7.37-7.93l.32.94L24.43,15l.17.47S21.47,16.66,17.76,23Z"/><path class="cls-1" d="M19.24,8.54A.44.44,0,0,1,19,8.45,9.79,9.79,0,0,0,8.34,8.37a.5.5,0,1,1-.54-.84h0a10.78,10.78,0,0,1,11.72.09.5.5,0,0,1,.14.69A.5.5,0,0,1,19.24,8.54Z"/><path class="cls-1" d="M17,11.3a.54.54,0,0,1-.28-.08,5.57,5.57,0,0,0-6.06-.05.5.5,0,0,1-.53-.84,6.57,6.57,0,0,1,7.14.05.5.5,0,0,1,.14.7A.49.49,0,0,1,17,11.3Z"/></svg>
-                        <h6>2.4GHz Wireless Audio</h6>
-                        <p>Get lag-free, high-fidelity gaming audio with a wireless range of up to 12 meters smoothly without disconnection.</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="child">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#44d62c;}</style></defs><title>razer-nari-35-mm-Wired-Mode-icon</title><path class="cls-1" d="M16.13,26.24a.49.49,0,0,1-.49-.5V19.61l-4.25,0,0,6.16a.5.5,0,1,1-1,0V19.61a1,1,0,0,1,1-1h4.22a1,1,0,0,1,1,1v6.13A.5.5,0,0,1,16.13,26.24Z"/><path class="cls-1" d="M15,19.58H12V7.89a1.49,1.49,0,0,1,3,0Zm-2-1h1V7.89a.5.5,0,0,0-1,0Z"/><rect class="cls-1" x="12.51" y="9.7" width="1.98" height="0.99"/><rect class="cls-1" x="12.51" y="12.3" width="1.98" height="0.99"/><rect class="cls-1" x="12.51" y="14.9" width="1.98" height="0.99"/><path class="cls-1" d="M13.5,26.63A13.14,13.14,0,1,1,26.63,13.5,13.14,13.14,0,0,1,13.5,26.63Zm0-25.28A12.15,12.15,0,1,0,25.64,13.5,12.15,12.15,0,0,0,13.5,1.35Z"/></svg>
-                        <h6>Wired Mode</h6>
-                        <p>Get seamless cross-platform compatibility via a 3.5 mm audio jack in wired mode. Enjoy high quality stereo sound whether you’re playing on PC, consoles or mobile.</p>
-                    </div>
-                </div>    
+          </div>
+          <div class="col">
+            <div class="child">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 27 27"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #44d62c;
+                    }
+                  </style>
+                </defs>
+                <title>razer-nari-Auto-Adjusting-Headband-icon</title>
+                <path
+                  class="cls-1"
+                  d="M4.82,24.36A14,14,0,0,1,.34,14.06,13.44,13.44,0,0,1,13.5.37,13.44,13.44,0,0,1,26.66,14.06,14,14,0,0,1,22.24,24.3l-.66-.78a12.89,12.89,0,0,0,4.09-9.46A12.43,12.43,0,0,0,13.5,1.41,12.43,12.43,0,0,0,1.33,14.06a12.89,12.89,0,0,0,4.15,9.52Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M8.41,26.69a.41.41,0,0,1-.21-.05A13.45,13.45,0,0,1,.74,16.36.53.53,0,0,1,1,15.85,6.1,6.1,0,0,1,2.8,15a6.2,6.2,0,0,1,1.63-.22c3.55,0,6.48,5.72,6.48,6.74A6.89,6.89,0,0,1,10,24.9a7,7,0,0,1-1.3,1.66A.46.46,0,0,1,8.41,26.69ZM1.77,16.55a12.52,12.52,0,0,0,6.54,9,5.62,5.62,0,0,0,.87-1.18,5.87,5.87,0,0,0,.74-2.84c-.08-.7-2.59-5.71-5.49-5.71A5.15,5.15,0,0,0,3.05,16,5.49,5.49,0,0,0,1.77,16.55Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M18.75,26.69a.46.46,0,0,1-.33-.13,6.77,6.77,0,0,1-1.3-1.66,6.89,6.89,0,0,1-.87-3.36c0-1,2.93-6.74,6.48-6.74a6.13,6.13,0,0,1,1.62.22,6,6,0,0,1,1.85.83.53.53,0,0,1,.22.51A13.49,13.49,0,0,1,19,26.64.41.41,0,0,1,18.75,26.69Zm4-10.86c-2.9,0-5.41,5-5.49,5.72A5.86,5.86,0,0,0,18,24.38a6,6,0,0,0,.86,1.18,12.47,12.47,0,0,0,6.54-9A5.42,5.42,0,0,0,24.11,16,5.21,5.21,0,0,0,22.73,15.83Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M6.36,6.59l-.71-.72a10.67,10.67,0,0,1,15.59-.09l-.7.73a9.7,9.7,0,0,0-14.18.08Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M9.55,23.74C5.87,17.2,2.8,16,2.77,16l.32-1c.14.05,3.42,1.27,7.32,8.2Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M17.65,23.74l-.85-.52c3.89-6.93,7.18-8.15,7.32-8.2l.32,1-.16-.49.16.49S21.33,17.2,17.65,23.74Z"
+                />
+              </svg>
+              <h6>Auto-Adjusting Headband</h6>
+              <p>Maximum adjustability to fit seamlessly onto any head size</p>
             </div>
-            
+          </div>
+          <div class="col">
+            <div class="child">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 27 27"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #44d62c;
+                    }
+                  </style>
+                </defs>
+                <title>razer-nari-Swiveling-Earcups-icon</title>
+                <path
+                  class="cls-1"
+                  d="M13.5.46A13.13,13.13,0,1,0,26.63,13.59,13.14,13.14,0,0,0,13.5.46Zm0,25.26A12.14,12.14,0,1,1,25.64,13.59,12.15,12.15,0,0,1,13.5,25.72Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M14.06,4.68a8.62,8.62,0,0,0-8.61,8.61,9.33,9.33,0,0,0,.11,1.4h0a.45.45,0,0,0,.12.27c.16.17,1.16,1.2,2.08,2a1.28,1.28,0,0,0-.09.48,1.51,1.51,0,1,0,.69-1.27c-.67-.6-1.42-1.35-1.84-1.79a8,8,0,0,1-.09-1.1,7.63,7.63,0,0,1,15.25,0c0,.23,0,.45,0,.67a4,4,0,0,0-.69-.25,4.51,4.51,0,0,0-1.08-.14c-2.43,0-4.33,3.66-4.33,4.33A4.34,4.34,0,0,0,17,21.13a.5.5,0,0,0,.33.12.45.45,0,0,0,.2,0,8.49,8.49,0,0,0,2.19-1.47l0,0A8.61,8.61,0,0,0,14.06,4.68Zm3.36,15.48a3.56,3.56,0,0,1-.43-.59,3.27,3.27,0,0,1-.45-1.64c.07-.45,1.63-3.37,3.34-3.37a3.59,3.59,0,0,1,.84.11,3.09,3.09,0,0,1,.66.25A7.54,7.54,0,0,1,17.42,20.16Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M10,13.59a4,4,0,0,0-2,.12.51.51,0,0,0-.32.63.5.5,0,0,0,.63.31,2.94,2.94,0,0,1,3.37,1.17A2.88,2.88,0,0,1,12.06,18a2.93,2.93,0,0,1-1.25,1.87,2.94,2.94,0,0,1-4.51-3,.49.49,0,0,0-.39-.58.48.48,0,0,0-.58.39A3.94,3.94,0,0,0,8.4,21.3a4.13,4.13,0,0,0,.78.08A3.93,3.93,0,0,0,10,13.59Z"
+                />
+              </svg>
+              <h6>Swiveling Earcups</h6>
+              <p>Adapting to the shape and position of your ears</p>
+            </div>
+          </div>
+        </div>
+        <div class="row parent">
+          <div class="col">
+            <div class="child">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 27 27"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #44d62c;
+                    }
+                  </style>
+                </defs>
+                <title>razer-nari-Game-Chat-Balance-icon</title>
+                <path
+                  class="cls-1"
+                  d="M13.5,26.63A13.13,13.13,0,1,1,26.63,13.5,13.14,13.14,0,0,1,13.5,26.63Zm0-25.27A12.14,12.14,0,1,0,25.64,13.5,12.16,12.16,0,0,0,13.5,1.36Z"
+                />
+                <rect
+                  class="cls-1"
+                  x="18.33"
+                  y="2.15"
+                  width="0.99"
+                  height="22.82"
+                />
+                <rect
+                  class="cls-1"
+                  x="7.66"
+                  y="2.15"
+                  width="0.99"
+                  height="23.03"
+                />
+                <path
+                  class="cls-1"
+                  d="M15.09,9.83H11.91a.5.5,0,1,1,0-1h3.18a.5.5,0,1,1,0,1Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M13.5,11.42a.5.5,0,0,1-.5-.49V7.75a.5.5,0,0,1,1,0v3.18A.5.5,0,0,1,13.5,11.42Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M15.09,18.25H11.91a.5.5,0,1,1,0-1h3.18a.5.5,0,1,1,0,1Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M19.07,18.44c.49,0,.89.54.89,1.21s-.4,1.21-.89,1.21"
+                />
+                <rect
+                  class="cls-1"
+                  x="19.13"
+                  y="6.64"
+                  width="0.72"
+                  height="3.2"
+                  rx="0.36"
+                  ry="0.36"
+                />
+              </svg>
+              <h6>Game/Chat Balance</h6>
+              <p>
+                Fine-tune between game and chat volume for the perfect mix that
+                lets you enjoy immersive sound without interrupting team
+                communication.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="child">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 27 27"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #44d62c;
+                    }
+                  </style>
+                </defs>
+                <title>razer-nari-Wireless-Audio-icon</title>
+                <path
+                  class="cls-1"
+                  d="M4.84,23.58a13.25,13.25,0,1,1,17.54,0l-.66-.75a12.25,12.25,0,1,0-16.22,0Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M8.45,25.84a.45.45,0,0,1-.2,0,13.12,13.12,0,0,1-7.52-10,.5.5,0,0,1,.23-.5,6.48,6.48,0,0,1,1.85-.8,6.54,6.54,0,0,1,1.64-.22C8,14.33,11,19.88,11,20.86a6.42,6.42,0,0,1-.88,3.25,6.14,6.14,0,0,1-1.3,1.61A.46.46,0,0,1,8.45,25.84ZM1.78,16a12.11,12.11,0,0,0,6.58,8.72,5.38,5.38,0,0,0,.87-1.14A5.56,5.56,0,0,0,10,20.86c-.07-.68-2.6-5.53-5.52-5.53a5.41,5.41,0,0,0-1.39.18A5.53,5.53,0,0,0,1.77,16Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M18.87,25.84a.52.52,0,0,1-.34-.12,6.56,6.56,0,0,1-2.18-4.87c0-1,2.95-6.52,6.52-6.52a6.41,6.41,0,0,1,1.64.21,6.69,6.69,0,0,1,1.86.81.51.51,0,0,1,.22.5,13.13,13.13,0,0,1-7.51,10A.52.52,0,0,1,18.87,25.84Zm4-10.51c-2.92,0-5.44,4.85-5.52,5.54a5.49,5.49,0,0,0,.74,2.74A5.64,5.64,0,0,0,19,24.75,12.15,12.15,0,0,0,25.55,16,5.69,5.69,0,0,0,22.87,15.33Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M6.39,6.39l-.71-.7a11,11,0,0,1,15.6-.18l.09.09-.7.71a10,10,0,0,0-14.19,0Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M9.61,23C5.9,16.66,2.8,15.5,2.77,15.49l.33-.94c.14,0,3.45,1.22,7.37,7.93Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M17.76,23l-.86-.51c3.92-6.71,7.24-7.89,7.37-7.93l.32.94L24.43,15l.17.47S21.47,16.66,17.76,23Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M19.24,8.54A.44.44,0,0,1,19,8.45,9.79,9.79,0,0,0,8.34,8.37a.5.5,0,1,1-.54-.84h0a10.78,10.78,0,0,1,11.72.09.5.5,0,0,1,.14.69A.5.5,0,0,1,19.24,8.54Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M17,11.3a.54.54,0,0,1-.28-.08,5.57,5.57,0,0,0-6.06-.05.5.5,0,0,1-.53-.84,6.57,6.57,0,0,1,7.14.05.5.5,0,0,1,.14.7A.49.49,0,0,1,17,11.3Z"
+                />
+              </svg>
+              <h6>2.4GHz Wireless Audio</h6>
+              <p>
+                Get lag-free, high-fidelity gaming audio with a wireless range
+                of up to 12 meters smoothly without disconnection.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="child">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 27 27"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #44d62c;
+                    }
+                  </style>
+                </defs>
+                <title>razer-nari-35-mm-Wired-Mode-icon</title>
+                <path
+                  class="cls-1"
+                  d="M16.13,26.24a.49.49,0,0,1-.49-.5V19.61l-4.25,0,0,6.16a.5.5,0,1,1-1,0V19.61a1,1,0,0,1,1-1h4.22a1,1,0,0,1,1,1v6.13A.5.5,0,0,1,16.13,26.24Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M15,19.58H12V7.89a1.49,1.49,0,0,1,3,0Zm-2-1h1V7.89a.5.5,0,0,0-1,0Z"
+                />
+                <rect
+                  class="cls-1"
+                  x="12.51"
+                  y="9.7"
+                  width="1.98"
+                  height="0.99"
+                />
+                <rect
+                  class="cls-1"
+                  x="12.51"
+                  y="12.3"
+                  width="1.98"
+                  height="0.99"
+                />
+                <rect
+                  class="cls-1"
+                  x="12.51"
+                  y="14.9"
+                  width="1.98"
+                  height="0.99"
+                />
+                <path
+                  class="cls-1"
+                  d="M13.5,26.63A13.14,13.14,0,1,1,26.63,13.5,13.14,13.14,0,0,1,13.5,26.63Zm0-25.28A12.15,12.15,0,1,0,25.64,13.5,12.15,12.15,0,0,0,13.5,1.35Z"
+                />
+              </svg>
+              <h6>Wired Mode</h6>
+              <p>
+                Get seamless cross-platform compatibility via a 3.5 mm audio
+                jack in wired mode. Enjoy high quality stereo sound whether
+                you’re playing on PC, consoles or mobile.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
     <section id="slider">
-        <div class="container">
-
-            <div class="header">
-                <h1>PRODUCT IMAGES</h1>
-            </div>
-
-              <div class="photos">  
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                          <!-- Slides -->
-                            <div class="swiper-slide">
-                              <div class="slider-child">
-                                  <img src="/assets/Desktop/JPG/razer-nari-gallery-05-wireless-gaming-headset.jpg" alt="">
-                                  <!-- Button trigger modal -->
-                                      <button type="button" class="btn rounded-pill" data-toggle="modal" data-target="#exampleModalCenter1">
-                                        view fullscreen
-                                      </button>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="slider-child">
-                                  <img src="/assets/Desktop/JPG/razer-nari-gallery-06-wireless-gaming-headset.jpg" alt="">
-                                  <!-- Button trigger modal -->
-                                  <button type="button" class="btn rounded-pill" data-toggle="modal" data-target="#exampleModalCenter2">
-                                    view fullscreen
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="slider-child">
-                                  <img src="/assets/Desktop/JPG/razer-nari-gallery-07-wireless-gaming-headset.jpg" alt="">
-                                  <!-- Button trigger modal -->
-                                  <button type="button" class="btn rounded-pill" data-toggle="modal" data-target="#exampleModalCenter3">
-                                    view fullscreen
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="slider-child">
-                                  <img src="/assets/Desktop/JPG/razer-nari-gallery-08-wireless-gaming-headset.jpg" alt="">
-                                  <!-- Button trigger modal -->
-                                  <button type="button" class="btn rounded-pill" data-toggle="modal" data-target="#exampleModalCenter4">
-                                    view fullscreen
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="slider-child">
-                                  <img src="/assets/Desktop/JPG/razer-nari-gallery-01-wireless-gaming-headset.jpg" alt="">
-                                  <!-- Button trigger modal -->
-                                  <button type="button" class="btn rounded-pill" data-toggle="modal" data-target="#exampleModalCenter5">
-                                    view fullscreen
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="slider-child">
-                                  <img src="/assets/Desktop/JPG/razer-nari-gallery-02-wireless-gaming-headset.jpg" alt="">
-                                  <!-- Button trigger modal -->
-                                  <button type="button" class="btn rounded-pill" data-toggle="modal" data-target="#exampleModalCenter6">
-                                    view fullscreen
-                                  </button>
-                              </div>
-                            </div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                     </div>
-                </div>
+      <div class="container">
+        <div class="header">
+          <h1>PRODUCT IMAGES</h1>
         </div>
+        <div class="photos">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slider-child">
+                  <img
+                    src="/assets/Desktop/JPG/razer-nari-gallery-05-wireless-gaming-headset.jpg"
+                    alt=""
+                  />
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn rounded-pill"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter1"
+                  >
+                    view fullscreen
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-child">
+                  <img
+                    src="/assets/Desktop/JPG/razer-nari-gallery-06-wireless-gaming-headset.jpg"
+                    alt=""
+                  />
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn rounded-pill"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter2"
+                  >
+                    view fullscreen
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-child">
+                  <img
+                    src="/assets/Desktop/JPG/razer-nari-gallery-07-wireless-gaming-headset.jpg"
+                    alt=""
+                  />
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn rounded-pill"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter3"
+                  >
+                    view fullscreen
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-child">
+                  <img
+                    src="/assets/Desktop/JPG/razer-nari-gallery-08-wireless-gaming-headset.jpg"
+                    alt=""
+                  />
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn rounded-pill"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter4"
+                  >
+                    view fullscreen
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-child">
+                  <img
+                    src="/assets/Desktop/JPG/razer-nari-gallery-01-wireless-gaming-headset.jpg"
+                    alt=""
+                  />
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn rounded-pill"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter5"
+                  >
+                    view fullscreen
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-child">
+                  <img
+                    src="/assets/Desktop/JPG/razer-nari-gallery-02-wireless-gaming-headset.jpg"
+                    alt=""
+                  />
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn rounded-pill"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter6"
+                  >
+                    view fullscreen
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </section>
-
     <section id="thx">
       <div class="container">
         <div class="col-6" data-aos="fade-up-right">
@@ -285,145 +699,179 @@
             <h1>THX SPATIAL AUDIO</h1>
           </div>
           <div class="content">
-            <p>THX Spatial Audio goes beyond traditional surround sound by simulating sound in a 360° sphere around you. With the Nari Ultimate, you can now react to any in-game movement, even if it’s coming from above or beneath you, giving you heightened senses during your game. Unleash your predatory instincts with sound as a weapon. </p>
-            <img src="/assets/Desktop/PNG/razer-nari-thx-logo.png" alt="">
+            <p>
+              THX Spatial Audio goes beyond traditional surround sound by
+              simulating sound in a 360° sphere around you. With the Nari
+              Ultimate, you can now react to any in-game movement, even if it’s
+              coming from above or beneath you, giving you heightened senses
+              during your game. Unleash your predatory instincts with sound as a
+              weapon.
+            </p>
+            <img src="/assets/Desktop/PNG/razer-nari-thx-logo.png" alt="" />
           </div>
         </div>
       </div>
     </section>
-
-    <secton id="other">
+    <section id="other">
       <div class="container">
-
         <div class="header">
           <h1>Explore Other Products</h1>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="images">
-                <img class="gadgets" src="/assets/Desktop/PNG/Nari-Ultimate-Base.png" alt="">
-                <img class="logo" src="/assets/Desktop/PNG/powered-by-chroma-xs.png" alt="">
-              </div>
-              <div class="content">
-                <h6>
-                  Razer Nari Ultimate
-                </h6>
-                <p>Wireless Gaming Headset with 
-                  Razer HyperSense</p>
+        <div class="main-wrap">
+          <div class="d-flex">
+            <div class="col">
+              <div class="card">
+                <div class="images">
+                  <img
+                    class="gadgets"
+                    src="/assets/Desktop/PNG/Nari-Ultimate-Base.png"
+                    alt=""
+                  />
+                  <img
+                    class="logo"
+                    src="/assets/Desktop/PNG/powered-by-chroma-xs.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <h6>Razer Nari Ultimate</h6>
+                  <p>Wireless Gaming Headset with Razer HyperSense</p>
                   <a href="#">LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="images">
+                  <img
+                    class="gadgets"
+                    src="/assets/Desktop/PNG/Nari-Ultimate-Base.png"
+                    alt=""
+                  />
+                  <img
+                    class="logo"
+                    src="/assets/Desktop/PNG/powered-by-chroma-xs.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <h6>Razer Nari Ultimate</h6>
+                  <p>Wireless Gaming Headset with Razer HyperSense</p>
+                  <a href="#">LEARN MORE</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="images">
-                <img class="gadgets" src="/assets/Desktop/PNG/Nari-Ultimate-Base.png" alt="">
-                <img class="logo" src="/assets/Desktop/PNG/powered-by-chroma-xs.png" alt="">
+
+          <div class="show">
+            <div class="d-flex items">
+              <div class="col">
+                <div class="card">
+                  <div class="images">
+                    <img
+                      class="gadgets"
+                      src="/assets/Desktop/PNG/Mamba-Wireless-Base.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo"
+                      src="/assets/Desktop/PNG/powered-by-chroma-xs.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content">
+                    <h6>Razer Nari Ultimate</h6>
+                    <p>Wireless Gaming Headset with Razer HyperSense</p>
+                    <a href="#">LEARN MORE</a>
+                  </div>
+                </div>
               </div>
-              <div class="content">
-                <h6>
-                  Razer Nari Ultimate
-                </h6>
-                <p>Wireless Gaming Headset with 
-                  Razer HyperSense</p>
-                  <a href="#">LEARN MORE</a>
+              <div class="col">
+                <div class="card">
+                  <div class="images">
+                    <img
+                      class="gadgets"
+                      src="/assets/Desktop/PNG/BlackWidow-Elite-Base.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo"
+                      src="/assets/Desktop/PNG/powered-by-chroma-xs.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content">
+                    <h6>Razer Nari Ultimate</h6>
+                    <p>Wireless Gaming Headset with Razer HyperSense</p>
+                    <a href="#">LEARN MORE</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="images">
-                <img class="gadgets" src="/assets/Desktop/PNG/Mamba-Wireless-Base.png" alt="">
-                <img class="logo" src="/assets/Desktop/PNG/powered-by-chroma-xs.png" alt="">
-              </div>
-              <div class="content">
-                <h6>
-                  Razer Nari Ultimate
-                </h6>
-                <p>Wireless Gaming Headset with 
-                  Razer HyperSense</p>
-                  <a href="#">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="images">
-                <img class="gadgets" src="/assets/Desktop/PNG/BlackWidow-Elite-Base.png" alt="">
-                <img class="logo" src="/assets/Desktop/PNG/powered-by-chroma-xs.png" alt="">
-              </div>
-              <div class="content">
-                <h6>
-                  Razer Nari Ultimate
-                </h6>
-                <p>Wireless Gaming Headset with 
-                  Razer HyperSense</p>
-                  <a href="#">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
+
+          <button class="btn" id="show" type="submit">view all products</button>
         </div>
       </div>
-    </secton>
+    </section>
 
     <section id="contact">
-      <div class="container d-flex">
+      <div class="container">
         <div class="col">
           <div class="header">
-            <h1>
-              ask a question
-            </h1>
+            <h1>ask a question</h1>
           </div>
 
           <div id="error_message"></div>
-            <form id="myform" onsubmit="return validate();">
-              <div class="d-flex">
-                <div class="input_field">
-                    <input type="text" placeholder="Name" id="name">
-                </div>
-                <div class="input_field">
-                    <input type="text" placeholder="Phone Number" id="phone">
-                </div>
+          <form id="myform" onsubmit="return validate();">
+            <div class="d-flex">
+              <div class="input_field">
+                <input type="text" placeholder="Name" id="name" />
               </div>
               <div class="input_field">
-                  <input type="text" placeholder="Email Address" id="email">
+                <input type="text" placeholder="Phone Number" id="phone" />
               </div>
-              <div class="input_field">
-                <input type="text" placeholder="Permanent Address" id="subject">
-              </div>
-              <div class="input_field">
-                  <textarea placeholder="Message" id="message"></textarea>
-              </div>
-              <div class="btn">
-                  <input type="submit" value="send">
-              </div>
-            </form>
+            </div>
+
+            <div class="input_field">
+              <input type="text" placeholder="Email Address" id="email" />
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Permanent Address" id="subject" />
+            </div>
+            <div class="input_field">
+              <textarea placeholder="Message" id="message"></textarea>
+            </div>
+
+            <div class="btn">
+              <input type="submit" value="send" />
+            </div>
+          </form>
         </div>
 
         <div class="col">
-          <div class="header">
-            <h1>information</h1>
+          <div class="wrapper">
+            <div class="info">
+              <div class="header">
+                <h1>information</h1>
+              </div>
+              <div>
+                <h6>address</h6>
+                <p>
+                  123 East 123th St. <br />Floor 123 <br />New York, NY, 10003
+                </p>
+              </div>
+              <div>
+                <h6>phone</h6>
+                <p>+1 234 567-8910</p>
+              </div>
+              <div>
+                <h6>email</h6>
+                <p>hello@fullstack.com</p>
+              </div>
+            </div>
           </div>
-            <div class="info">
-              <h6>address</h6>
-              <p>123 East 123th St. <br>Floor 123 <br>New York, NY, 10003</p>
-            </div>
-            <div class="info">
-              <h6>
-                phone
-              </h6>
-              <p>
-                +1 234 567-8910
-              </p>
-            </div>
-            <div class="info">
-              <h6>email</h6>
-              <p>hello@fullstack.com</p>
-            </div>
-
-
         </div>
       </div>
     </section>
@@ -431,9 +879,8 @@
     <footer id="footer">
       <div class="container">
         <div class="col-4">
-          <img src="assets/Desktop/PNG/Razer Logo.png" alt="">
+          <img src="assets/Desktop/PNG/Razer Logo.png" alt="" />
         </div>
-
         <div class="col-4">
           <a href="#">products</a>
           <a href="#">about</a>
@@ -442,108 +889,231 @@
         </div>
 
         <div class="col-4">
-          <img src="assets/Desktop/SVG/twitter-logo-silhouette.svg" alt="">
-          <img src="assets/Desktop/SVG/facebook-logo.svg" alt="">
-          <img src="assets/Desktop/SVG/google-plus.svg" alt="">
+          <img src="assets/Desktop/SVG/twitter-logo-silhouette.svg" alt="" />
+          <img src="assets/Desktop/SVG/facebook-logo.svg" alt="" />
+          <img src="assets/Desktop/SVG/google-plus.svg" alt="" />
         </div>
       </div>
 
       <div class="container">
         <p>Copyright © 2019 FULLSTACKHQ Inc. All rights reserved.</p>
       </div>
-
     </footer>
 
-<!-- Modals -->
-        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src="/assets/Desktop/JPG/razer-nari-gallery-05-wireless-gaming-headset.jpg" alt="">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+    <!-- Modals -->
+    <section id="modals" class="container">
+      <div
+        class="modal fade"
+        id="exampleModalCenter1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                src="/assets/Desktop/JPG/razer-nari-gallery-05-wireless-gaming-headset.jpg"
+                alt=""
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src="/assets/Desktop/JPG/razer-nari-gallery-06-wireless-gaming-headset.jpg" alt="">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+      <div
+        class="modal fade"
+        id="exampleModalCenter2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                src="/assets/Desktop/JPG/razer-nari-gallery-06-wireless-gaming-headset.jpg"
+                alt=""
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src="/assets/Desktop/JPG/razer-nari-gallery-07-wireless-gaming-headset.jpg" alt="">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+      <div
+        class="modal fade"
+        id="exampleModalCenter3"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                src="/assets/Desktop/JPG/razer-nari-gallery-07-wireless-gaming-headset.jpg"
+                alt=""
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src="/assets/Desktop/JPG/razer-nari-gallery-08-wireless-gaming-headset.jpg" alt="">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+      <div
+        class="modal fade"
+        id="exampleModalCenter4"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                src="/assets/Desktop/JPG/razer-nari-gallery-08-wireless-gaming-headset.jpg"
+                alt=""
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src="/assets/Desktop/JPG/razer-nari-gallery-01-wireless-gaming-headset.jpg" alt="">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+      <div
+        class="modal fade"
+        id="exampleModalCenter5"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                src="/assets/Desktop/JPG/razer-nari-gallery-01-wireless-gaming-headset.jpg"
+                alt=""
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src="/assets/Desktop/JPG/razer-nari-gallery-02-wireless-gaming-headset.jpg" alt="">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+      <div
+        class="modal fade"
+        id="exampleModalCenter6"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                src="/assets/Desktop/JPG/razer-nari-gallery-02-wireless-gaming-headset.jpg"
+                alt=""
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-
-
-    
-    
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
