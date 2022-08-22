@@ -265,6 +265,14 @@ body {
     border: 1px solid #00ff01;
   }
 
+  .nav-item {
+    a:hover {
+      &:hover {
+        color: #00ff01;
+      }
+    }
+  }
+
   .navbar-toggler {
     background-color: #0f0f0f;
   }
@@ -276,6 +284,11 @@ body {
       color: #978e8e;
       text-transform: uppercase;
       font-weight: 700;
+
+      &:hover {
+        color: #00ff01;
+        background-color: transparent;
+      }
     }
 
     .dropdown-menu {
@@ -316,50 +329,76 @@ body {
 }
 
 // responsive navbar
+
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: 3px;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
 
+  .nav-label {
+    h2 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 700;
+      color: #818181;
+      margin: 30px 0px 0px 20px;
+    }
+  }
+
+  .dropdown-toggle::after {
+    border: none !important;
+    font: normal normal normal 20px/1 FontAwesome;
+    content: "\f105" !important; /* the desired FontAwesome icon */
+    vertical-align: 0; /* to center vertically */
+  }
+
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 5%;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
 
     a {
+      margin-left: 20px;
       padding: 8px;
       text-decoration: none;
-      font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
+      font-size: 20px;
       color: #818181;
       display: block;
       transition: 0.3s;
+      text-transform: uppercase;
+      font-weight: 700;
 
-      &:active {
-        color: #000;
+      &:focus {
+        color: #00ff01;
       }
     }
 
     a:hover,
     a:focus {
-      color: #000;
-      background-color: #f1f1f1;
+      color: #00ff01;
     }
   }
 
   .closebtn {
     position: absolute;
-    top: 20px;
+    color: #818181;
+    top: 3px;
     right: 45px;
     font-size: 60px;
+  }
+
+  .btn {
+    margin: 10% 5%;
+    width: 90%;
+    height: 50px;
   }
 }
 
