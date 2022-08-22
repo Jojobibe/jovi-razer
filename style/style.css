@@ -75,7 +75,7 @@ body {
     font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
   }
   #hero {
-    background-image: url(/assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset.jpg);
+    background-image: url(../assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset.jpg);
     background-size: contain;
     background-position: center center;
     flex-direction: column;
@@ -295,7 +295,7 @@ body {
 }
 
 #hero {
-  background-image: url(/assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg);
+  background-image: url(../assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -422,7 +422,7 @@ body {
 }
 
 #thx {
-  background-image: url(/assets/Desktop/JPG/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
+  background-image: url(../assets/Desktop/JPG/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
   background-size: cover;
 }
 #thx .col-6 {
