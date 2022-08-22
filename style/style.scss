@@ -6,6 +6,18 @@ body {
 
 // RESPONSIVENESS
 
+@media screen and (width: 1024px) {
+  #other {
+    .col {
+      width: 250px;
+      .gadgets {
+        width: 90%;
+        height: auto;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
   .header {
     p {
@@ -543,7 +555,7 @@ body {
             background-color: #000;
 
             .gadgets {
-              height: 250px;
+              height: auto;
             }
 
             .logo {
