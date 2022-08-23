@@ -142,6 +142,9 @@ body {
     width: 100%;
     font-size: clamp(0.75rem, -0.2308rem + 4.6154vw, 1.5rem);
   }
+  #other .card {
+    margin-bottom: 3rem;
+  }
   #contact {
     padding: 0;
   }
