@@ -118,8 +118,8 @@ moreItems.addEventListener("click", (e) => {
   items.classList.toggle("show-more");
 
   if (moreItems.innerHTML === "VIEW ALL PRODUCTS") {
-    moreItems.innerHTML = "CLOSE";
-  } else {
     moreItems.innerHTML = "VIEW ALL PRODUCTS";
+  } else {
+    moreItems.innerHTML = "CLOSE";
   }
 });
